@@ -1,0 +1,1 @@
+将log4j.xml放到classpath路径下

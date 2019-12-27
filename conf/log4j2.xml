@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- status=debug 可以查看log4j的装配过程 -->
+<configuration status="info" monitorInterval="30"
+	shutdownHook="disable">
+	<properties>
+		<property name="INFO_HOME">log/info</property>
+		<property name="LOG_HOME">log/error</property>
+		<property name="MINUTE_HOME">log/minute</property>
+		<property name="RESOURCE_HOME">log/resource</property>
+		<property name="chatLog">log/chat</property>
+		<property name="callbackLog">log/callback</property>
+	</properties>
+
+	<appenders>
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout
+				pattern="%d{yyyy-MM-dd HH:mm:ss SSS} [%t] %-5level %logger{36} - %msg%n" />
+		</Console>
+		<!-- 普通日志 -->
+		<RollingFile name="info_appender" fileName="${INFO_HOME}/info.log"
+			filePattern="${INFO_HOME}/info-%d{yyyy-MM-dd}-%i.log">
+			<PatternLayout pattern="%-d{yyyy-MM-dd HH:mm:ss SSS} [%thread] %m%n" />
+			<SizeBasedTriggeringPolicy size="200 MB" />
+			<DefaultRolloverStrategy max="20" min="0" />
+			<Filters>
+				<ThresholdFilter level="error" onMatch="DENY"
+					onMismatch="NEUTRAL" />
+				<ThresholdFilter level="info" onMatch="ACCEPT"
+					onMismatch="DENY" />
+			</Filters>
+		</RollingFile>
+
+		<!-- 错误日志 -->
+		<RollingFile name="error_appender" fileName="${LOG_HOME}/error.log"
+			filePattern="${LOG_HOME}/error-%d{yyyy-MM-dd}-%i.log">
+			<PatternLayout pattern="%-d{yyyy-MM-dd HH:mm:ss SSS} [%thread] %m%n" />
+			<SizeBasedTriggeringPolicy size="200 MB" />
+			<DefaultRolloverStrategy max="20" min="0" />
+			<ThresholdFilter level="error" onMatch="ACCEPT"
+				onMismatch="DENY" />
+		</RollingFile>
+
+
+	</appenders>
+
+	<loggers>
+		<AsyncLogger name="org.springframework" level="warn" />
+		<AsyncLogger name="org.apache.mina" level="warn" />
+		<AsyncLogger name="org.apache.http" level="warn" />
+		<AsyncLogger name="org.apache.commons" level="warn" />
+		<AsyncLogger name="com.mchange.v2" level="error" />
+		<AsyncLogger name="com.ibatis" level="warn" />
+		<AsyncLogger name="java.sql" level="info" />
+		<AsyncLogger name="org.quartz" level="warn" />
+		<AsyncLogger name="com.opensymphony" level="warn" />
+		<AsyncLogger name="com.sun.xml.internal.ws" level="warn" />
+
+		<AsyncLogger name="error_logger" level="error" additivity="true">
+			<AppenderRef ref="error_appender" />
+		</AsyncLogger>
+		<AsyncLogger name="info_logger" level="info" additivity="true">
+			<AppenderRef ref="info_appender" />
+		</AsyncLogger>
+		<root level="info">
+			<AppenderRef ref="Console" />
+			<AppenderRef ref="error_appender" />
+			<AppenderRef ref="info_appender" />
+		</root>
+
+	</loggers>
+
+</configuration>

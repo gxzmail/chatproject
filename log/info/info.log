@@ -1,0 +1,35 @@
+2019-12-25 19:55:33 874 [main] this is info
+2019-12-25 19:55:33 876 [main] this is warn
+2019-12-27 19:09:42 949 [main] begin to connect host!
+2019-12-27 19:11:03 822 [main] begin to connect host!
+2019-12-27 19:11:48 475 [main] server start
+2019-12-27 19:12:48 566 [main] begin to connect host!
+2019-12-27 19:12:48 575 [main] a new socket is connected!
+2019-12-27 19:12:48 578 [main] server start
+2019-12-27 19:13:57 670 [main] begin to connect host!
+2019-12-27 19:13:57 679 [main] a new socket is connected!
+2019-12-27 19:13:57 683 [main] server start
+2019-12-27 19:17:53 318 [main] server start
+2019-12-27 19:18:12 672 [main] begin to connect host!
+2019-12-27 19:18:12 684 [main] a new socket is connected!
+2019-12-27 19:18:12 687 [main] server start
+2019-12-27 19:18:22 514 [Thread-1] the rev string is :hh
+2019-12-27 19:20:03 515 [main] server start
+2019-12-27 19:20:12 258 [main] begin to connect host!
+2019-12-27 19:20:12 268 [main] a new socket is connected!
+2019-12-27 19:20:12 271 [main] server start
+2019-12-27 19:20:19 078 [Thread-1] the rev string is :hh
+2019-12-27 19:20:19 080 [Thread-1] the send string is hh
+2019-12-27 19:23:13 840 [main] server start
+2019-12-27 19:23:32 459 [main] begin to connect host!
+2019-12-27 19:23:32 473 [main] a new socket is connected!
+2019-12-27 19:23:32 478 [main] server start
+2019-12-27 19:23:52 479 [Thread-1] the rev string is :hh
+2019-12-27 19:23:52 480 [Thread-1] the send string is hh
+2019-12-27 19:24:48 822 [main] begin to connect host!
+2019-12-27 19:24:48 834 [main] a new socket is connected!
+2019-12-27 19:24:48 835 [main] server start
+2019-12-27 19:25:13 020 [main] begin to connect host!
+2019-12-27 19:25:13 029 [main] a new socket is connected!
+2019-12-27 19:25:13 031 [main] server start
+2019-12-27 19:25:44 950 [Thread-5] the rev string is :hh
