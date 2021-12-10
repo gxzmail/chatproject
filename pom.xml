@@ -11,11 +11,11 @@
      
      
      <java.version>1.8</java.version>
-     <!-- jar°ü°æ±¾ÉèÖÃ -->
+     <!-- jaråŒ…ç‰ˆæœ¬è®¾ç½® -->
 
 			<slf4j.version>1.7.21</slf4j.version>
 			
-			<log4j.version>2.11.0</log4j.version>
+			<log4j.version>2.15.0</log4j.version>
      
      <junit.version>4.12</junit.version>
      
@@ -37,7 +37,7 @@
          <version>${log4j2.version}</version>
       </dependency>
       
-			      <!-- µ¼Èëslf4jµÄ½Ó¿Ú°üÒÔ¼°¶ÔÓ¦ÈÕÖ¾¿ò¼ÜµÄÇý¶¯°ü -->
+			      <!-- å¯¼å…¥slf4jçš„æŽ¥å£åŒ…ä»¥åŠå¯¹åº”æ—¥å¿—æ¡†æž¶çš„é©±åŠ¨åŒ… -->
 			
 			<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
 			
@@ -51,7 +51,7 @@
 			
 			</dependency>
 			
-			<!--ÓÃÓÚslf4jÓëlog4j2±£³ÖÇÅ½Ó -->
+			<!--ç”¨äºŽslf4jä¸Žlog4j2ä¿æŒæ¡¥æŽ¥ -->
 			
 			<!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-slf4j-impl -->
 			
@@ -69,7 +69,7 @@
 			
 			 
 			
-			<!-- µ¼ÈëÈÕÖ¾¿ò¼ÜºËÐÄ°üÓë½Ó¿Ú°ü -->
+			<!-- å¯¼å…¥æ—¥å¿—æ¡†æž¶æ ¸å¿ƒåŒ…ä¸ŽæŽ¥å£åŒ… -->
 			
 			<!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
 			
@@ -99,7 +99,7 @@
 			
 			 
 			
-			<!--ÓÃÓÚ½â¾öweb»·¾³ÏÂ¹Ø±Õ·þÎñÆ÷Ê±¿ÉÄÜ³öÏÖµÄlog4jÏß³ÌÎÞ·¨¼°Ê±¹Ø±ÕµÄwarn£¬web¹¤³ÌÐèÒª°üº¬log4j-web£¬·Çweb¹¤³Ì²»ÐèÒª -->
+			<!--ç”¨äºŽè§£å†³webçŽ¯å¢ƒä¸‹å…³é—­æœåŠ¡å™¨æ—¶å¯èƒ½å‡ºçŽ°çš„log4jçº¿ç¨‹æ— æ³•åŠæ—¶å…³é—­çš„warnï¼Œwebå·¥ç¨‹éœ€è¦åŒ…å«log4j-webï¼Œéžwebå·¥ç¨‹ä¸éœ€è¦ -->
 			
 			<!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-web -->
 			
@@ -117,7 +117,7 @@
 			
 			 
 			
-			<!--Ê¹ÓÃlog4j2µÄAsyncLoggerÊ±ÐèÒª°üº¬disruptor -->
+			<!--ä½¿ç”¨log4j2çš„AsyncLoggeræ—¶éœ€è¦åŒ…å«disruptor -->
 			
 			<!-- https://mvnrepository.com/artifact/com.lmax/disruptor -->
 			
